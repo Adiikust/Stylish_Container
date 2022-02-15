@@ -43,18 +43,23 @@ class _StylishContainerState extends State<StylishContainer> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: widget.onTap!() ?? () {},
-      child: Container(
+      child:
+          // Container
+          Container(
         width: widget.width ?? MediaQuery.of(context).size.width * 0.90,
         height: widget.height,
         decoration: CustomBoxDecoration(),
+        //Column
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            //Title Text
             Padding(
               padding: const EdgeInsets.all(5.0),
               child: CustomTitleText(),
             ),
+            //SubTitle Text
             Padding(
               padding: const EdgeInsets.all(5.0),
               child: CustomSubtitleText(),

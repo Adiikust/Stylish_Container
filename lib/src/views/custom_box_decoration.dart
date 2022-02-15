@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:stylish_container/src/utils/export.dart';
 
 BoxDecoration CustomBoxDecoration() {
   var widget;
